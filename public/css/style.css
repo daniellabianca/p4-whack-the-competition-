@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: rgba(90, 88, 78, 0.824);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+button {
+  text-transform: uppercase;
+  background: rgb(128, 206, 214);
+  border-radius: .5rem;
+  border: 0;
+  cursor: pointer;
+  height: 3rem;
+  font-size: calc(1.2rem + 0.2vw);
+  font-weight: 800;
+  width: 50%;
+  white-space: pre-wrap;
+  color: rgb(234, 236, 229);
+}
+
+.bkgd-img {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: url('../img/black.jpg') center center;
+  background-color: rgba(48, 56, 63, 0.796);
+}
+
+.mascots-img {
+  margin-top: 1%;
+  position: relative;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+
+.wwtw {
+  width: 60%;
+}
+
+.welcome-message {
+  font-weight: 800;
+  color: rgb(58, 58, 48);
+  font-size: calc(1.8rem + 0.2vw);
+}
+
+.onload {
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 .16rem .33rem rgb(234, 236, 229);
+  width: 45%;
+  max-height: 70vh;
+  background: rgb(192, 222, 217);
+  margin: 5% auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 1.25rem;
+}
+
+.show-score {
+  display: block;
+  font-size: 2.33rem;
+  margin: 1rem 0;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.final-score, .welcome-image, .score-message {
+  font-size: calc(1.8rem + 0.2vw);
+  font-weight: 800;
+  text-align: center;
+  padding: .833rem;
+  color: rgb(59, 58, 48);
+  position: relative;
+}
+
+.start-button, .buttons {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: .7rem;
+  color: rgb(234, 236, 229);
+}
+
+.score {
+  display: inline-block;
+  font-size: 2.25rem;
+  background: rgb(177, 203, 187);
+  padding: 0.5rem 1rem;
+  border-radius: .33rem;
+  box-shadow: 0 .16rem .33rem rgba(0, 0, 0, 0.5);
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.add-score {
+  background: rgb(80, 57, 76);
+  color: rgb(233, 235, 228);
+  transform: scale(1.1);
+}
+
+.game {
+  max-width: 85%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.hole::after {
+  display: block;
+  content: '';
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  bottom: -2.5rem;
+  padding-top: 4.166rem;
+}
+
+.mascot, img {
+  z-index: 3;
+}
+
+.mascot {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  cursor: url(../img/mallet.png), auto;
+}
+
+.hole.popup .mascot {
+  top: 0;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.55);
+  bottom: 0;
+  width: 100vw;
+  position: fixed;
+  height: 2rem;
+}
+
+.footer-block {
+  margin: .633rem 0;
+  text-align: center;
+  font-size: .8rem;
+}
