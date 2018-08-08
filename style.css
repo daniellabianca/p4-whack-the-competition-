@@ -7,15 +7,14 @@
 }
 
 html, body {
-  margin: 0;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 80%;
 }
-
-body {
+ body {
+   margin: 0;
+  overflow: hidden; 
   background: rgba(90, 88, 78, 0.824);
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 90%;
 }
 
 button {
@@ -25,7 +24,7 @@ button {
   border: 0;
   cursor: pointer;
   height: 3rem;
-  font-size: calc(1.2rem + 0.2vw);
+  font-size: calc(1.2rem + 0.2%);
   font-weight: 800;
   width: 50%;
   white-space: pre-wrap;
@@ -37,7 +36,7 @@ button {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background: url('../img/black.jpg') center center;
+  background: url('img/black.jpg') center center;
   background-color: rgba(48, 56, 63, 0.796);
 }
 
@@ -55,11 +54,6 @@ button {
   width: 60%;
 }
 
-.welcome-message {
-  font-weight: 800;
-  color: rgb(58, 58, 48);
-  font-size: calc(1.8rem + 0.2vw);
-}
 
 .onload {
   bottom: 0;
@@ -67,7 +61,7 @@ button {
   z-index: 999;
   box-shadow: 0 .16rem .33rem rgb(234, 236, 229);
   width: 45%;
-  max-height: 70vh;
+  max-height: 100%;
   background: rgb(192, 222, 217);
   margin: 5% auto;
   top: 50%;
@@ -85,7 +79,7 @@ button {
 }
 
 .final-score, .welcome-image, .score-message {
-  font-size: calc(1.8rem + 0.2vw);
+  font-size: calc(1.8rem + 0.2%);
   font-weight: 800;
   text-align: center;
   padding: .833rem;
@@ -118,11 +112,11 @@ button {
 
 .game {
   max-width: 85%;
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 1.25rem;
+  /* padding-top: 5.25rem; */
 }
 
 .hole {
@@ -130,29 +124,35 @@ button {
   overflow: hidden;
   position: relative;
   display: block;
+  /* padding-top: 4.166rem; */
+  height: 90%;
+
 }
 
 .hole::after {
   display: block;
   content: '';
-  width: 100vw;
-  height: 50vh;
-  position: absolute;
+  width: 100%;
+  height: 90%;
+  position: relative;
   bottom: -2.5rem;
-  padding-top: 4.166rem;
+  /* padding-top: 4.166rem; */
 }
 
 .mascot, img {
   z-index: 3;
 }
 
+
 .mascot {
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: 90%;
+  background-size: 70%;
   height: 100%;
   transition: all 0.5s;
-  cursor: url(../img/mallet.png), auto;
+  padding-top: 5px; 
+  cursor: url('img/mallet.png'), auto;
 }
 
 .hole.popup .mascot {
@@ -162,7 +162,7 @@ button {
 .footer {
   background-color: rgba(255, 255, 255, 0.55);
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   height: 2rem;
 }

@@ -16,8 +16,6 @@ $(document).ready(function() {
 setUpGame = () => {
   //hide game div
   $(".game").hide();
-  // //hide the welcome message span
-  // $(".welcome-message").hide();
   //hide the buttons div
   $(".buttons").hide();
   //hide the score counter
@@ -27,12 +25,12 @@ setUpGame = () => {
   //swt the holes background image
   $(".hole").css(
     "background",
-    `url('../img/cars.png') bottom center no-repeat`
+    `url('img/cars.png') bottom center no-repeat`
   );
   //set the mascot image
   $(".mascot").css(
     "background",
-    `url('../img/mayhem.png') bottom center no-repeat`
+    `url('img/mayhem.png') bottom center no-repeat`
   );
 };
 
@@ -90,8 +88,7 @@ showMascot = () => {
 changeElements = () => {
   //hide the onload div
   $(".onload").hide();
-  //hide the welcome message span
-  $(".welcome-message").hide();
+ 
   //show the hole div
   $(".hole").show();
   //show the game div
@@ -233,14 +230,14 @@ $(".start").on("click", beginWhacking);
 $(".buttons").on("click", ".level-two", function() {
   //change the background image of the hole divs and set the background size
   $(".hole").css({
-    background: "url('../img/dirt.png') bottom center no-repeat",
+    background: "url('img/dirt.png') bottom center no-repeat",
     "background-size": "contain"
   });
   $("#mayhem").remove();
   //change the mascot image in the mascot div
   $(".mascot").css(
     "background",
-    `url('../img/gecko.png') bottom center no-repeat`
+    `url('img/gecko.png') bottom center no-repeat`
   );
   //run the function to begin the game
   beginWhacking();
@@ -250,13 +247,13 @@ $(".buttons").on("click", ".level-two", function() {
 $(".buttons").on("click", ".level-three", function() {
   //change the background image of the hole divs and set the background size
   $(".hole").css({
-    background: "url('../img/prog.png') bottom center no-repeat",
+    background: "url('img/prog.png') bottom center no-repeat",
     "background-size": "contain"
   });
   //change the mascot image in the mascot div
   $(".mascot").css(
     "background",
-    `url('../img/flo.png') bottom center no-repeat`
+    `url('img/flo.png') bottom center no-repeat`
   );
   //run the function to begin the game
   beginWhacking();
@@ -272,18 +269,18 @@ $(".reset-game").on("click", () => {
   beginWhacking();
 });
 
-//jquery media query handler for dynamically created elements - unable to change the sizes in css file.
-$(window).resize(function() {
-  //assign a width variable that returns the width of the window
-  let width = $(window).width();
-  //if the window width is greater than 1600px
-  if (width > 1600) {
-    //adjust the background sizes of the mascot and hole divs
-    $(".mascot").css("background-size", "80%");
-    $(".hole").css("background-size", "70%");
-  } else {
-    //if it is less than 1600px, reduce the background sizes of the mascot and hole divs
-    $(".mascot").css("background-size", "35%");
-    $(".hole").css("background-size", "85%");
-  }
-});
+// //jquery media query handler for dynamically created elements - unable to change the sizes in css file.
+// $(window).resize(function() {
+//   //assign a width variable that returns the width of the window
+//   let width = $(window).width();
+//   //if the window width is greater than 1600px
+//   if (width > 1600) {
+//     //adjust the background sizes of the mascot and hole divs
+//     $(".mascot").css("background-size", "80%");
+//     $(".hole").css("background-size", "70%");
+//   } else {
+//     //if it is less than 1600px, reduce the background sizes of the mascot and hole divs
+//     $(".mascot").css("background-size", "35%");
+//     $(".hole").css("background-size", "85%");
+//   }
+// });
