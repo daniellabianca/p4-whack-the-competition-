@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +6,13 @@
   font-family: Montserrat, sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 80%;
 }
- body {
-   margin: 0;
-  overflow: hidden; 
+body {
+  margin: 0;
+  overflow: hidden;
   background: rgba(90, 88, 78, 0.824);
   width: 100%;
 }
@@ -19,7 +20,7 @@ html, body {
 button {
   text-transform: uppercase;
   background: rgb(128, 206, 214);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 0;
   cursor: pointer;
   height: 3rem;
@@ -35,7 +36,7 @@ button {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background: url('img/black.jpg') center center;
+  background: url("img/black.jpg") center center;
   background-color: rgba(48, 56, 63, 0.796);
 }
 
@@ -54,12 +55,11 @@ button {
   width: 60%;
 }
 
-
 .onload {
   bottom: 0;
   right: 0;
   z-index: 999;
-  box-shadow: 0 .16rem .33rem rgb(234, 236, 229);
+  box-shadow: 0 0.16rem 0.33rem rgb(234, 236, 229);
   width: 45%;
   max-height: 100%;
   background: rgb(192, 222, 217);
@@ -78,19 +78,22 @@ button {
   right: 2%;
 }
 
-.final-score, .welcome-image, .score-message {
+.final-score,
+.welcome-image,
+.score-message {
   font-size: calc(1.8rem + 0.2%);
   font-weight: 800;
   text-align: center;
-  padding: .833rem;
+  padding: 0.833rem;
   color: rgb(59, 58, 48);
   position: relative;
 }
 
-.start-button, .buttons {
+.start-button,
+.buttons {
   text-align: center;
   margin: 0 auto;
-  padding-top: .7rem;
+  padding-top: 0.7rem;
   color: rgb(234, 236, 229);
 }
 
@@ -99,8 +102,8 @@ button {
   font-size: 2.25rem;
   background: rgb(177, 203, 187);
   padding: 0.5rem 1rem;
-  border-radius: .33rem;
-  box-shadow: 0 .16rem .33rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.33rem;
+  box-shadow: 0 0.16rem 0.33rem rgba(0, 0, 0, 0.5);
   transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -126,12 +129,11 @@ button {
   display: block;
   /* padding-top: 4.166rem; */
   height: 90%;
-
 }
 
 .hole::after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 90%;
   position: relative;
@@ -139,10 +141,10 @@ button {
   /* padding-top: 4.166rem; */
 }
 
-.mascot, img {
+.mascot,
+img {
   z-index: 3;
 }
-
 
 .mascot {
   position: absolute;
@@ -151,8 +153,8 @@ button {
   background-size: 70%;
   height: 100%;
   transition: all 0.5s;
-  padding-top: 5px; 
-  cursor: url('img/mallet.png'), auto;
+  padding-top: 5px;
+  cursor: url("img/mallet.png"), auto;
 }
 
 .hole.popup .mascot {
@@ -168,7 +170,7 @@ button {
 }
 
 .footer-block {
-  margin: .633rem 0;
+  margin: 0.633rem 0;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }

@@ -23,10 +23,7 @@ setUpGame = () => {
   //change body background color
   $("body").addClass("bkgd-img");
   //swt the holes background image
-  $(".hole").css(
-    "background",
-    `url('img/cars.png') bottom center no-repeat`
-  );
+  $(".hole").css("background", `url('img/cars.png') bottom center no-repeat`);
   //set the mascot image
   $(".mascot").css(
     "background",
@@ -88,7 +85,7 @@ showMascot = () => {
 changeElements = () => {
   //hide the onload div
   $(".onload").hide();
- 
+
   //show the hole div
   $(".hole").show();
   //show the game div
@@ -251,10 +248,7 @@ $(".buttons").on("click", ".level-three", function() {
     "background-size": "contain"
   });
   //change the mascot image in the mascot div
-  $(".mascot").css(
-    "background",
-    `url('img/flo.png') bottom center no-repeat`
-  );
+  $(".mascot").css("background", `url('img/flo.png') bottom center no-repeat`);
   //run the function to begin the game
   beginWhacking();
 });
